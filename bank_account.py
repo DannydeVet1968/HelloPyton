@@ -15,7 +15,7 @@ class BankAccount:
             if amount <= self.balance:
                 self.balance -= amount
             else:
-                print("Insufficient balance!")
+                print("Insufficient balance.")
         else:
             print("Withdrawal amount must be positive.")
 

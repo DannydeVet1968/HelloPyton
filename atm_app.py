@@ -11,8 +11,13 @@ print(f"You deposited €42 on your account, your new balance is: €{account.ba
 account.withdraw(20.00)
 print(f"You withdraw €20,00 from your account, your new balance is: €{account.balance:.2f}")
 
+print("\n The three account id's for testing purposes")
+print("      7101968  pin 1234   Danny de Vet      1000")
+print("      1234567  pin 4567   Urbanus Van Anus  500")
+print("      7654321  pin 4321   Kamagurka         750")
+
 def login(bank_accounts):
-    account_id = input("Please enter your account id: ")
+    account_id = input("\nPlease enter your account id: ")
     for account in bank_accounts:
         if account.account_id == account_id:
             for attempt in range(3):
